@@ -44,7 +44,6 @@
     async function saveText() {
       const text = document.getElementById("textInput").value;
       await setDoc(doc(db, "pastes", "ultimo"), { content: text, timestamp: Date.now() });
-      alert("Testo salvato!");
     }
 
     // Carica testo
